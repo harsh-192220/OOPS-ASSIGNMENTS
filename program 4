@@ -1,0 +1,32 @@
+#include<iostream>
+#include<cmath>
+float power(float n,float m)
+{
+    float a;
+    a=pow(n,m);
+    return a;
+}
+float power(float n)
+{
+    float b;
+    b=pow(n,2.0);
+    return b;
+}
+void display(float a)
+{
+    std::cout<<"\n The reqiured result is :"<<a;
+}
+int main()
+{
+    float exponent,base;
+    float a,b;
+    std::cout<<"\n Enter the base of the power";
+    std::cin>>base;
+    std::cout<<"\n Enter the exponent of the power";
+    std::cin>>exponent;
+    a=power(base,exponent);
+    display(a);
+    b=power(base);
+    display(b);
+    return 0;
+}
